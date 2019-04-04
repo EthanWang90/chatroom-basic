@@ -25,7 +25,7 @@ SECRET_KEY = 'dztrobb@()t5mlz2+6!5aial5b@=tgnkbeyc@lh08v^%#u3czo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, ‘shrouded-sea-30945.herokuapp.com’]
 
 
 # Application definition
