@@ -72,6 +72,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'justchat.wsgi.application'
 ASGI_APPLICATION = 'justchat.routing.application'
 
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
