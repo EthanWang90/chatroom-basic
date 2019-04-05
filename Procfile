@@ -1,1 +1,1 @@
-web: daphne justchat.asgi:channel_layer
+web: daphne justchat.asgi:application --port $PORT --bind 0.0.0.0 -v2
